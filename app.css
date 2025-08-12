@@ -1,0 +1,114 @@
+h1 {
+  text-align: center;
+}
+
+.task-panel {
+  color: #0088ff;
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+}
+
+.task-panel .task-counter {
+  flex-grow: 1;
+}
+
+.task-panel span {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.task-panel span.active {
+  font-weight: bold;
+}
+
+.todo-app {
+  width: 300px;
+  margin: 50px auto;
+  background: aliceblue;
+  padding: 10px;
+}
+
+.todo-app > .todo-input {
+  display: block;
+  margin: auto;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  width: 80%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* background-color: #fff; */
+  background-clip: padding-box;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.todo-app > .todo-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.task-list {
+  margin-top: 8px;
+}
+
+.task {
+  font-size: 18px;
+  color: #111111;
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  padding: 0.25rem;
+  align-items: center;
+  /* justify-content: left; */
+}
+
+.task > input {
+  margin: auto;
+}
+
+.delete-btn {
+  opacity: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+}
+
+.delete-btn > svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  display: inline-block;
+  vertical-align: middle;
+  stroke-width: 1.2;
+  transition: transform 0.15s ease;
+}
+
+.delete-btn:hover svg {
+  transform: scale(1.05);
+}
+
+.task:hover,
+.task:hover .task-label {
+  background-color: #def0ff;
+  cursor: pointer;
+}
+
+.task:hover .delete-btn {
+  opacity: 1;
+}
+
+.task.done {
+  opacity: 0.7;
+}
+
+.task.done .task-label {
+  text-decoration: line-through;
+}
