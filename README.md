@@ -11,7 +11,7 @@ A simple Todo List application built using the OWL framework.
 
 ## **Getting Started**
 
-1. Clone the repository: `git clone https://github.com/your-username/owl_framework_todoapp.git`
+1. Clone the repository: `git clone https://github.com/duongvhoang2611/todo-app.git`
 2. Start the application: use a local server (e.g., with VS Code’s **“Live Server”** extension)
 
 ## **Application Structure**
